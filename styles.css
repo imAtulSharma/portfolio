@@ -408,6 +408,36 @@ section {
     font-weight: bold;
 }
 
+.timeline-location {
+    color: #6b7280;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.timeline-skills {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.timeline-skills .skill-tag {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.timeline-skills .skill-tag:hover {
+    background: #c7d2fe;
+    transform: translateY(-2px);
+}
+
 /* Projects Section */
 .projects {
     background: #f8fafc;
