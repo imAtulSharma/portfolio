@@ -92,6 +92,25 @@ body {
     width: 100%;
 }
 
+.nav-link.resume-link {
+    background: #059669;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-link.resume-link:hover {
+    background: #047857;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+}
+
+.nav-link.resume-link::after {
+    display: none;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -187,6 +206,17 @@ body {
 .btn-secondary:hover {
     background: white;
     color: #1f2937;
+    transform: translateY(-2px);
+}
+
+.btn-resume {
+    background: #059669;
+    color: white;
+    border: 2px solid #059669;
+}
+
+.btn-resume:hover {
+    background: #047857;
     transform: translateY(-2px);
 }
 
@@ -619,6 +649,190 @@ section {
     font-weight: 500;
     color: #374151;
     text-align: center;
+}
+
+/* Achievements Section */
+.achievements {
+    background: #f8fafc;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.achievement-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb;
+}
+
+.achievement-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+.achievement-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.achievement-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-content p {
+    color: #6b7280;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Education Section */
+.education {
+    background: white;
+}
+
+.education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #e5e7eb;
+}
+
+.education-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.education-item:nth-child(odd) .education-content {
+    margin-left: 0;
+    margin-right: 50%;
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.education-item:nth-child(even) .education-content {
+    margin-left: 50%;
+    margin-right: 0;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.education-content {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.education-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb;
+}
+
+.education-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background: #2563eb;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.education-item:nth-child(odd) .education-content::before {
+    right: -58px;
+}
+
+.education-item:nth-child(even) .education-content::before {
+    left: -58px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.education-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.education-date {
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.education-content h4 {
+    font-size: 1rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.education-score {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score-label {
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.score-value {
+    color: #059669;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 /* Contact Section */
