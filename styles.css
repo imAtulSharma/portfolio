@@ -489,6 +489,46 @@ section {
     line-height: 1.6;
 }
 
+.project-type {
+    color: #2563eb !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem !important;
+}
+
+.project-date {
+    color: #9ca3af !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 1rem !important;
+}
+
+.project-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.project-features li {
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.project-features li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
